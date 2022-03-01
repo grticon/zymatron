@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zymatron - Contact</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" /> <!-- https://fonts.google.com/ -->    
+    <link href="css/bootstrap.min.css" rel="stylesheet" /> <!-- https://getbootstrap.com/ -->
+    <link href="fontawesome/css/all.min.css" rel="stylesheet" /> <!-- https://fontawesome.com/ -->
+    <link href="css/templatemo-business-oriented.css" rel="stylesheet" />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</head>
+<!--
+-->
+<body>
+    <div id="parallax-1" class="parallax-window" data-parallax="scroll" data-image-src="img/biz-oriented-header.svg">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="tm-logo">
+                        <img src="img/logo.png" style="width: 80%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tm-nav-container-outer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg" id="tm-main-nav">
+                        <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
+                            data-target="#navbar-nav" aria-controls="navbar-nav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="dark-blue-text"><i class="fas fa-bars"></i></span>
+                        </button>
+                        <div class="collapse navbar-collapse tm-nav" id="navbar-nav">                            
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link tm-nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link tm-nav-link" href="services.html">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link tm-nav-link" href="about.html">About</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link tm-nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-7 mb-25">
+        <div class="row">
+            <div class="col-12">
+                <section class="tm-contact-form-box mx-auto mb-7">
+                    <h3 class="tm-title-gray mb-4 text-center">Contact Information</h3>
+                    <hr class="mb-8 tm-hr tm-hr-s mx-auto">
+                    <p class="mb-4 text-center"><i class="fa fa-envelope"></i> zymatron@gmail.com</p>
+                    <p class="mb-8 text-center"><i class="fa fa-phone"></i> +2348134862139</p>
+                    <h3 class="tm-title-gray mb-4 text-center">Leave a message</h3>
+                    <hr class="mb-8 tm-hr tm-hr-s mx-auto">
+                    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js">
+                    </script>
+                    <script type="text/javascript">
+                        (function() {
+                        emailjs.init("user_SRoQgNTJBrylTDfekdXEj");
+                        })();
+                    </script>
+                    <div id="contact-form" action="" method="POST" class="tm-contact-form">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control rounded-0 number1" placeholder="Name"  />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control rounded-0 number2" placeholder="Email"  />
+                        </div>
+                        <!--
+                            <div class="form-group">
+                            <select class="form-control" id="contact-select" name="inquiry">
+                                <option value="-">Subject</option>
+                                <option value="hardware">Hardware</option>
+                                <option value="software">Software</option>
+                                <option value="consultancy">Consultancy</option>
+                                <option value="others">Others</option>
+                            </select>
+                        </div>
+                        -->
+                        <div class="form-group">
+                            <textarea rows="8" name="message" class="form-control rounded-0 contact-msg" placeholder="Message"></textarea>
+                        </div>
+
+                        <div class="form-group mb-0">
+                            <button type="submit" onclick="sendMail()" class="btn btn-primary rounded-0 d-block mx-auto">Submit</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="tm-address-box mx-auto">
+                    <h3 class="tm-title-gray mb-4 text-center">Our Address</h3>
+                    <hr class="mb-5 tm-hr tm-hr-s mx-auto">
+                    <p class="mb-8 mx-auto text-center tm-address-text">2, Oluwadare street, Shomolu Lagos</p>
+                    <div class="mapouter mb-60">
+                        <div class="gmap_canvas">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.9517107093534!2d3.375986914644481!3d6.527783424924855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8daa68a412bd%3A0xe33538e1339f8ff1!2s2%20Oluwadare%20St%2C%20Igbobi%20102216%2C%20Lagos!5e0!3m2!1sen!2sng!4v1642876224152!5m2!1sen!2sng" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <p class="mx-auto text-center tm-address-text">
+                    </p>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid">
+        <div class="row">
+            <p class="col-lg-9 col-md-8 mb-5 mb-md-0">
+                Copyright &copy; 2022
+                <span class="tm-text-primary">Zymatron</span>
+                - designed by <a rel="nofollow" target="_parent" href="https://templatemo.com" class="tm-link-primary">IconDev</a>
+            </p>
+            <div class="col-lg-3 col-md-4 text-right">
+                <a rel="nofollow" target="_blank" href="https://fb.com/templatemo" class="tm-social-link">
+                    <i class="fab fa-facebook fa-2x tm-social-icon"></i>
+                </a>
+                <a href="https://twitter.com" class="tm-social-link">
+                    <i class="fab fa-twitter fa-2x tm-social-icon"></i>
+                </a>
+                <a href="https://linkedin.com" class="tm-social-link">
+                    <i class="fab fa-linkedin fa-2x tm-social-icon"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/parallax.min.js"></script> <!-- https://pixelcog.github.io/parallax.js/ -->
+    <script src="js/tooplate-script.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#parallax-1').parallax({ imageSrc: 'img/biz-oriented-header.svg' });
+        });
+    </script>
+</body>
+</html>
